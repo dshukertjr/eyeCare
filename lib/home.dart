@@ -43,17 +43,19 @@ class _HomePageState extends State<HomePage> {
           DrawerHeader(
             child: Text("User Name"),
           ),
-          ListView(
-            children: <Widget>[
-              ListTile(
-                leading: Icon(Icons.person),
-                title: Text("Profile"),
-              ),
-              ListTile(
-                leading: Icon(Icons.settings),
-                title: Text("Setting"),
-              ),
-            ],
+          Expanded(
+                      child: ListView(
+              children: <Widget>[
+                ListTile(
+                  leading: Icon(Icons.person),
+                  title: Text("Profile"),
+                ),
+                ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text("Setting"),
+                ),
+              ],
+            ),
           ),
           ListTile(
             title: Text("Terms & Conditions"),
